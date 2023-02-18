@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+
+.main .container {
+  width: 100%;
+}
+
+.header {
+  width: 800px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.header .invoices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.header .invoices button {
+  background-color: #7c5df5;
+  padding: 10px;
+  border-radius: 20px;
+  border: #7c5df5 1px solid;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+button:hover {
+  box-shadow: 0 0px 20px 1px grey;
+}
+.header .invoices button span {
+  padding: 9px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  color:#000;
+}
+
+.wrap {
+  width: 800px;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 0px 1px 6px 0px grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  height: 80px;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 0px 20px 1px grey;
+}
