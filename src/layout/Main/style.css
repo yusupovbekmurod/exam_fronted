@@ -3,9 +3,8 @@
   height: 100vh;
 }
 
-
 .main .container {
-  width: 100%;
+  margin-left: 330px;
 }
 
 .header {
@@ -13,7 +12,6 @@
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .header .invoices {
@@ -40,7 +38,7 @@ button:hover {
   margin-right: 10px;
   background-color: #fff;
   border-radius: 20px;
-  color:#000;
+  color: #000;
 }
 
 .wrap {

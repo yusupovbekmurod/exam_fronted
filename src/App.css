@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+.App{
+  display: flex;
+  
+}
 
  .section {
   width: 70px;
   background-color: rgb(7, 0, 64);
   border-radius: 0 20px 20px 0;
+  height: 100vh;
 }
 

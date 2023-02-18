@@ -7,7 +7,7 @@ import {  Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-        <section className="section">1</section>
+      <section className="section">1</section>
     <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/main" element={<Main />} />

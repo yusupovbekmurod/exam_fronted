@@ -2,9 +2,9 @@ import "./style.css";
 
 function NotFound(){
     return (
-        <>
-        NotFound
-        </>
+        <div className="not">
+        <p>not</p>
+        </div>
     )
 }
 export default NotFound

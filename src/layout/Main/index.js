@@ -2,7 +2,11 @@ import "./style.css";
 import { NavLink } from "react-router-dom";
 
 function Main() {
+
+
+
   return (
+
     <main className="main">
       <container className="container">
         <section className="header">
@@ -28,6 +32,7 @@ function Main() {
           </div>
         </section>
         <section className="wrap">
+
           <card className="card">
             <div
               style={{
@@ -40,7 +45,6 @@ function Main() {
               <span style={{ color: "grey" }}>date_card</span>
               <p style={{ color: "grey" }}>card_description</p>
             </div>
-
             <div
               style={{
                 display: "flex",
@@ -56,10 +60,7 @@ function Main() {
               </NavLink>
             </div>
           </card>
-
-          <card className="card">
-            <p>2</p>
-          </card>
+           
         </section>
       </container>
     
