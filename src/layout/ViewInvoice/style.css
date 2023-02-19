@@ -1,8 +1,70 @@
 .view{
-   
     width: 800px;
     margin: 30px auto;
+}
+
+.editwrap{
+    margin-top: 20px;
+    height: 90px;
+    
+    box-shadow: 0px 1px 6px 0px grey;
+    border-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+   padding: 0 20px 0 20px;
+
+}
+
+.markPaid{
+    margin-left: 10px;
+    background-color: #7c5df5;
+    padding: 15px;
+    border-radius: 20px;
+    border: #7c5df5 1px solid;
+    color: #fff;
+    cursor: pointer;
+}
+
+.deleteVoice{
+    margin-left: 10px;
+    background-color: red;
+    padding: 15px;
+    border-radius: 20px;
+    border: red 1px solid;
+    color: #fff;
+    cursor: pointer;
+}
+
+.editInvoice{
+    background-color: lightgrey;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    border: lightgrey 1px solid;
+}
+
+.renderwrap{
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 70vh;
+    
+    margin-top: 20px;
+    box-shadow: 0px 1px 6px 0px grey;
+    padding: 30px;
+}
+
+.viewCard{
+    height: 80px;
+}
+
+.voiceTable{
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    
+
+}
+p{
+    padding: 10px 0 10px 0;
 }

@@ -72,7 +72,7 @@ function Main() {
               style={{ listStyleType: "none", textDecoration: "none" }}
               to="/AddInvoice"
             >
-              <button>
+              <button className="hover">
                 <span>
                   <b>+</b>
                 </span>
@@ -85,10 +85,7 @@ function Main() {
           {(filter == "" ? invoices : filter).map((invoice) => {
             return (
               <div key={invoice.id}>
-                <card
-                  className="card"
-                 
-                >
+                <card className="card">
                   <div
                     style={{
                       display: "flex",
@@ -136,8 +133,8 @@ function Main() {
                       style={{ listStyleType: "none", textDecoration: "none" }}
                       to="/ViewInvoice"
                       onClick={function () {
-                        setLanguagetoLocalStorage(invoice.id)
-
+                        setLanguagetoLocalStorage(invoice.id);
+                        console.log(setLanguagetoLocalStorage(invoice.id));
                       }}
                     >
                       ▶

@@ -1,3 +1,11 @@
-.not{
-    background-color: red;
+.not {
+  width: 800px;
+  margin: 30px auto;
+
+}
+
+.notname{
+  justify-content: center;
+  display: flex;
+  margin-top: 300px;
 }

@@ -3,7 +3,7 @@ import "./style.css";
 function NotFound(){
     return (
         <div className="not">
-        <p>not</p>
+        <h1 className="notname">404 Not Found </h1>
         </div>
     )
 }

@@ -68,7 +68,7 @@
   cursor: pointer;
   transition: box-shadow 0.3s;
 }
-button:hover {
+.hover:hover {
   box-shadow: 0 0px 20px 1px grey;
 }
 .header .invoices button span {
