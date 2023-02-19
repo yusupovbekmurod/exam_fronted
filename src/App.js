@@ -33,7 +33,7 @@ function App() {
   const [style, setStyle] = useState(oldStyle);
 
   const modeClick = () => {
-    setStyle(style === oldStyle ? newStyle : oldStyle);
+   return  setStyle(style === oldStyle ? newStyle : oldStyle);
   };
 
   return (

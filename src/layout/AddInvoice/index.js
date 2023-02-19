@@ -5,7 +5,7 @@ function addInvoice() {
 
     return (
         <div className="addInvoice">
-           123456
+          addInvoice
         </div>
     )
 }
