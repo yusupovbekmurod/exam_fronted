@@ -1,9 +1,10 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getAccessTokenLocal } from "../../utils/storage";
 import "./index.css";
 
 function AddInvoice() {
+
 
     useEffect(() => {
         (async function () {
@@ -26,9 +27,14 @@ function AddInvoice() {
     
         })();
       }, []);
-    
-      function btn(e) {
-        e.preventDefault()
+
+      const [name , setName] = useState("");
+
+      const  btn = (e) => {
+        e.preventDefault();
+
+       console.log(name);
+       
 
       }
 
@@ -37,15 +43,15 @@ function AddInvoice() {
      <div className="form">
         <h4>Add invoices</h4>
         <div>
-           <form action="#">
-            <input placeholder="Client's Name"/>
-            <input placeholder="Client's Email"/>
+           <form action="#" onSubmit={btn}>
+            <input placeholder="Client's Name" onChange={(e) => setName()}/>
+            {/* <input placeholder="Client's Email"/>
             <input type='date' placeholder="Due Date"/>
             <input placeholder="Payment Terms"/>
             <input minLength={3} placeholder="Project Description" required='true'/>
-            <input  placeholder="price" type='number'/>
+            <input  placeholder="price" type='number'/> */}
 
-            <button onClick={btn} >btn</button>
+            <button type='submit'>btn</button>
            </form>
         </div>
      </div>

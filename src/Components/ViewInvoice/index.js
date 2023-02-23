@@ -8,7 +8,7 @@ import "./style.css";
 function deleteVoice() {
   const id = getLanguageFromLocalStorage("idNumber");
   (async function () {
-    const repsonse = await axios.delete(
+     await axios.delete(
         `http://167.235.158.238:3001/invoices/${id}`
       );
 
