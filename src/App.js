@@ -1,12 +1,12 @@
 import "./App.css";
-import Main from "./layout/Main";
-import NotFound from "./layout/NotFound";
-import ViewInvoice from "./layout/ViewInvoice";
+import Main from "./Components/Main";
+import NotFound from "./Components/NotFound";
+import ViewInvoice from "./Components/ViewInvoice";
 import Login from "./pages/Login";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import AddInvoice from "./layout/AddInvoice";
+import AddInvoice from "./Components/AddInvoice";
 import logo from "./images/logo.png"
 
 function App() {

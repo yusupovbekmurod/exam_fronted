@@ -1,0 +1,12 @@
+.AddInvoice {
+    width: 800px;
+    margin: 30px auto;
+   background-color: aqua;
+  }
+
+  .form{
+    margin: auto;
+    width: 70%;
+    height: 500px;
+    background-color:green;
+  }

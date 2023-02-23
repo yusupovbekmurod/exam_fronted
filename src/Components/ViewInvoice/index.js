@@ -4,6 +4,18 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./style.css";
 
+
+function deleteVoice() {
+  const id = getLanguageFromLocalStorage("idNumber");
+  (async function () {
+    const repsonse = await axios.delete(
+        `http://167.235.158.238:3001/invoices/${id}`
+      );
+
+    })();
+
+}
+
 function ViewInvoice() {
   const id = getLanguageFromLocalStorage("idNumber");
   const [invoice, setInvoice] = useState([]);
@@ -29,8 +41,8 @@ function ViewInvoice() {
         <p style={{cursor:'pointer'}} onClick={()=>navigate(-2)} >◀ Go back</p>
       </div>
 
-      <div className="viewrapper">
-        <div className="editwrap">
+      <div className="view-viewrapper">
+        <div className="view-viewrapper_editwrap">
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <p>Status</p>
             <span>
@@ -59,18 +71,18 @@ function ViewInvoice() {
             </span>
           </div>
           <div>
-            <button className="editInvoice">Edit</button>
-            <button className="deleteVoice">Delete</button>
-            <button  className="markPaid" style={{display:bg()}}>Mark as Paid</button>
+            <button className="view-viewrapper_editwrap_editInvoice">Edit</button>
+            <button onClick={deleteVoice} className="view-viewrapper_editwrap_deleteVoice">Delete</button>
+            <button  className="view-viewrapper_editwrap_markPaid" style={{display:bg()}}>Mark as Paid</button>
           </div>
         </div>
-        <div className="renderwrap">
-          <div className="viewCard">
+        <div className="view-viewrapper_editwrap_renderwrap">
+          <div className="view-viewrapper_editwrap_renderwrap-viewCard">
             <h4>#{invoice.id}</h4>
             <p className="parag">asfd</p>
           </div>
           <div
-            className="viewCard"
+            className="view-viewrapper_editwrap_renderwrap-viewCard"
             style={{ display: "flex", justifyContent: "space-between" }}
           >
             <div>
@@ -86,7 +98,7 @@ function ViewInvoice() {
               <h3>{invoice.email}</h3>
             </div>
           </div>
-          <div className="viewCard">
+          <div className="view-viewrapper_editwrap_renderwrap-viewCard">
             <p className="parag">Payment Due</p>
             <h3>{invoice.dueDate}</h3>
           </div>

@@ -3,7 +3,7 @@
     margin: 30px auto;
 }
 
-.editwrap{
+.view-viewrapper_editwrap{
     margin-top: 20px;
     height: 90px;
     
@@ -16,7 +16,7 @@
 
 }
 
-.markPaid{
+.view-viewrapper_editwrap_markPaid{
     margin-left: 10px;
     background-color: #7c5df5;
     padding: 15px;
@@ -26,7 +26,7 @@
     cursor: pointer;
 }
 
-.deleteVoice{
+.view-viewrapper_editwrap_deleteVoice{
     margin-left: 10px;
     background-color: red;
     padding: 15px;
@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-.editInvoice{
+.view-viewrapper_editwrap_editInvoice{
     background-color: lightgrey;
     color: #000;
     cursor: pointer;
@@ -45,7 +45,7 @@
     border: lightgrey 1px solid;
 }
 
-.renderwrap{
+.view-viewrapper_editwrap_renderwrap{
     margin-top: 20px;
     border-radius: 10px;
     height: 70vh;
@@ -56,7 +56,7 @@
 }
 
 
-.viewCard{
+.view-viewrapper_editwrap_renderwrap-viewCard{
     height: 80px;
 }
 

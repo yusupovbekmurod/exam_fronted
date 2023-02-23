@@ -4,6 +4,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { setLanguagetoLocalStorage } from "../store";
 
+
+
 function Main() {
   const [invoices, setInvoice] = useState([]);
   const [paid, setPaid] = useState([]);
@@ -40,8 +42,8 @@ function Main() {
 
   return (
     <main className="main">
-      <container className="container">
-        <section className="header">
+      <container className="main-container">
+        <section className="main-container_header">
           <div>
             <h1>Invoices</h1>
             <p>
@@ -49,7 +51,7 @@ function Main() {
               total invoices
             </p>
           </div>
-          <div className="invoices">
+          <div className="main-container_header_invoices">
             <form action="#">
               <label for="">Filter by status</label>
               <select
@@ -81,11 +83,11 @@ function Main() {
             </NavLink>
           </div>
         </section>
-        <section className="wrap">
+        <section className="main-container_wrap">
           {(filter == "" ? invoices : filter).map((invoice) => {
             return (
               <div key={invoice.id}>
-                <card className="card">
+                <card className="main-container_wrap_card">
                   <div
                     style={{
                       display: "flex",

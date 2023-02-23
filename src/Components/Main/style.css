@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-.main .container {
+.main .main-container {
   margin-left: 330px;
   overflow-y: scroll;
   
@@ -44,7 +44,7 @@
   background: none;
 }
 
-.header {
+.main-container_header {
   width: 850px;
   margin: 30px auto;
   display: flex;
@@ -52,14 +52,14 @@
 
 }
 
-.header .invoices {
+.main-container_header .main-container_header_invoices {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 40%;
 }
 
-.header .invoices button {
+.main-container_header .main-container_header_invoices button {
   background-color: #7c5df5;
   padding: 15px;
   border-radius: 20px;
@@ -71,7 +71,7 @@
 .hover:hover {
   box-shadow: 0 0px 20px 1px grey;
 }
-.header .invoices button span {
+.main-container_header .main-container_header_invoices button span {
   padding: 9px;
   margin-right: 10px;
   background-color: #fff;
@@ -80,7 +80,7 @@
   
 }
 
-.wrap {
+.main-container_wrap {
   width: 800px;
   margin: 30px auto;
   display: grid;
@@ -88,7 +88,7 @@
   gap: 20px;
 }
 
-.card {
+.main-container_wrap_card {
   box-shadow: 0px 1px 6px 0px grey;
   display: flex;
   justify-content: space-between;
@@ -100,6 +100,6 @@
   
 }
 
-.card:hover {
+.main-container_wrap_card:hover {
   box-shadow: 0 0px 20px 1px grey;
 }
